@@ -1,0 +1,273 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #121212; /* Background principal */
+    color: white; /* Cor do texto padrão */
+    scroll-behavior: smooth; /* Suavização no rolamento da página */
+}
+
+/* Estilos do Header */
+header {
+    background-color: #121212; /* Cor de fundo do header */
+    color: white; /* Cor do texto do header */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white; /* Cor dos links no menu de navegação */
+    text-decoration: none;
+}
+
+/* Estilos da Seção Hero na Página Principal */
+.hero {
+    background-color: #5c64f4; /* Cor de fundo da seção hero */
+    text-align: center;
+    padding: 50px 20px;
+    color: white; /* Cor do texto na seção hero */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.hero button {
+    background-color: white; /* Cor de fundo do botão */
+    color: #5c64f4; /* Cor do texto do botão */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 20px; /* Adiciona arredondamento nos botões */
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+    text-shadow: 0 0 8px #5c64f4; /* Efeito de neon */
+    box-shadow: 0 0 15px rgba(92, 100, 244, 0.6); /* Efeito de iluminação ao redor do botão */
+}
+
+.hero button:hover {
+    background-color: #5c64f4; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+    border: 2px solid white; /* Bordas brancas */
+    border-radius: 20px; /* Mantém o arredondamento ao passar o mouse */
+    text-shadow: 0 0 8px white; /* Efeito de neon ao passar o mouse */
+    box-shadow: 0 0 25px white; /* Aumenta a iluminação ao passar o mouse */
+}
+
+/* Estilos dos Slots na Página Principal */
+.slot {
+    display: flex;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin: 20px auto; /* Adiciona margem para afastar dos lados */
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    width: 90%; /* Ajuste conforme necessário para controlar a largura do slot */
+    max-width: 1000px; /* Define uma largura máxima para os slots */
+}
+
+.slot img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    border-radius: 10px;
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+.slot-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #5c64f4; /* Cor do título dos slots */
+    text-shadow: 0 0 8px #5c64f4; /* Efeito de neon */
+}
+
+.slot-content p {
+    font-size: 1rem;
+    color: white; /* Cor do texto dos slots */
+}
+
+/* Animação de rolagem */
+.slot.reveal, .hero.reveal, .about.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animação de hover para os slots */
+.slot:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos da Seção About na Página Principal */
+.about {
+    background-color: #121212; /* Cor de fundo da seção about */
+    padding: 40px 20px;
+    text-align: center;
+    color: white; /* Cor do texto na seção about */
+}
+
+/* Estilos da Página de Integrantes */
+main h2 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2rem;
+    text-shadow: 0 0 10px #5c64f4; /* Efeito de neon no título */
+}
+
+.carousel {
+    position: relative;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 1000px;
+    overflow: visible; /* Permite que o cartão expandido seja totalmente visível */
+}
+
+.carousel-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.profile-card {
+    background-color: #1a1a1a;
+    border: 2px solid #5c64f4;
+    border-radius: 15px;
+    margin: 0 10px;
+    width: 280px; /* Aumentei a largura dos cartões */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(92, 100, 244, 0.6); /* Efeito de iluminação ao redor do cartão */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.profile-card:hover {
+    transform: scale(1.1); /* Aumentei o efeito de hover */
+    box-shadow: 0 0 25px rgba(92, 100, 244, 0.8); /* Aumenta o efeito de neon ao passar o mouse */
+}
+
+.profile-photo {
+    width: 120px; /* Aumentei o tamanho da foto de perfil */
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid #5c64f4; /* Bordas com efeito de neon */
+    box-shadow: 0 0 8px #5c64f4;
+}
+
+.banner-photo img {
+    width: 100%;
+    height: 140px; /* Aumentei a altura da imagem de banner */
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: white;
+}
+
+.roles {
+    margin-top: 15px;
+}
+
+.role {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 20px;
+    border: 2px solid;
+    font-size: 0.9rem;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.role.dev {
+    color: #7289daff;
+    border-color: #7289daff;
+    box-shadow: 0 0 8px #7289daff;
+}
+
+.role.design {
+    color: #8d72daff;
+    border-color: #8d72daff;
+    box-shadow: 0 0 8px #8d72daff;
+}
+
+footer {
+    background-color: #121212; 
+    color: white; 
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.expanded-card {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    z-index: 1000; 
+    background-color: #1a1a1a; 
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(92, 100, 244, 0.8); 
+    padding: 20px;
+    overflow: auto; 
+    transition: all 0.5s ease-in-out;
+}
+
+.expanded-card .profile-photo {
+    width: 150px; 
+    height: 150px;
+}
+
+.expanded-card .banner-photo img {
+    height: 200px; 
+}
+
+.expanded-card .description {
+    font-size: 1.2rem; 
+    margin-top: 20px;
+}
+
+.expanded-card .roles {
+    margin-top: 20px;
+    font-size: 1rem;
+}
