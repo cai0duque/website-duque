@@ -3,9 +3,9 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #121212; /* Background principal */
-    color: white; /* Cor do texto padrão */
-    scroll-behavior: smooth; /* Suavização no rolamento da página */
+    background-color: #121212; 
+    color: white; 
+    scroll-behavior: smooth; 
 }
 
 /* Estilos do Header */
@@ -266,7 +266,8 @@ footer {
     font-size: 1.2rem; 
     margin-top: 20px;
 }
-
+/* Após adicionar as classes de right e left arrow na classe integranteshtml, precisaremos realizar as chamadas para estilização e posicionamento */
+/* Precisamos também resolver o problema do tamanho dos cartões não ficar fixo, e adicionar o método que irá ocultar o excesso da descrição no cartão pequeno, e adicionar "..." */
 .expanded-card .roles {
     margin-top: 20px;
     font-size: 1rem;
