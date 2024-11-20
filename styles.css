@@ -344,3 +344,151 @@ footer {
     color: #5c64f4;
     box-shadow: 0 0 25px white;
 }
+
+/* Responsividade para telas com largura máxima de 768px (tablets) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .slot {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .slot img {
+        margin: 0 auto 20px auto;
+    }
+
+    .slot-content {
+        text-align: center;
+    }
+
+    .carousel-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .documents {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .document-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Responsividade para telas com largura máxima de 480px (smartphones) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    header .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    header .logo h1 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .hero button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .slot img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .slot-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .slot-content p {
+        font-size: 0.9rem;
+    }
+
+    .profile-card {
+        width: 100%;
+    }
+
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .banner-photo img {
+        height: 100px;
+    }
+
+    .description h3 {
+        font-size: 1.2rem;
+    }
+
+    .description p {
+        font-size: 0.9rem;
+    }
+
+    .document-card img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .document-card h3 {
+        font-size: 0.9rem;
+    }
+
+    .document-card button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
