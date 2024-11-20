@@ -272,3 +272,75 @@ footer {
     margin-top: 20px;
     font-size: 1rem;
 }
+
+/* Estilos da Seção de Documentação */
+.documentation {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.documentation h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #5c64f4;
+}
+
+.documentation p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.documents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.document-card {
+    background-color: #1a1a1a;
+    border: 2px solid #5c64f4;
+    border-radius: 15px;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(92, 100, 244, 0.6);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.document-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(92, 100, 244, 0.8);
+}
+
+.document-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.document-card h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.document-card button {
+    background-color: #5c64f4; 
+    color: white; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 20px;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+    text-shadow: 0 0 8px white; 
+    box-shadow: 0 0 15px #5c64f4; 
+}
+
+.document-card button:hover {
+    background-color: white;
+    color: #5c64f4;
+    box-shadow: 0 0 25px white;
+}
